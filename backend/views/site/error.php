@@ -9,8 +9,7 @@ use yii\helpers\Html;
 
 $this->title = $name;
 ?>
-<div class="site-error">
-
+<section class="wrapper site-min-height">
     <h1><?= Html::encode($this->title) ?></h1>
 
     <div class="alert alert-danger">
@@ -23,5 +22,4 @@ $this->title = $name;
     <p>
         Please contact us if you think this is a server error. Thank you.
     </p>
-
-</div>
+</section>

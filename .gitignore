@@ -1,7 +1,5 @@
-# yii console commands
+# yii console command
 /yii
-/yii_test
-/yii_test.bat
 
 # phpstorm project files
 .idea
@@ -18,6 +16,9 @@ nbproject
 Thumbs.db
 
 # composer vendor dir
+#!/vendor
+#/vendor/*
+#!/vendor/mdmsoft
 /vendor
 
 # composer itself is not needed

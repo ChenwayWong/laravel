@@ -7,29 +7,42 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-$this->title = 'Login';
+$this->title = Yii::t('common', 'login');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-login">
-    <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>Please fill out the following fields to login:</p>
+<?php $form = ActiveForm::begin([
+    'id' => 'login-form',
+    'options'=>[
+        'class'=>'form-signin lock-box text-center'
+    ]
+]); ?>
 
-    <div class="row">
-        <div class="col-lg-5">
-            <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
+<a class="logo floatless" href="/">IZ<span>YUE</span>管理系统</a>
+<div class="login-wrap">
 
-                <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
+    <?= $form->field($model, 'username',[
+        'inputOptions' => ['class'=>'form-control', 'placeholder' => Yii::t('common', 'username')],
+        'inputTemplate' => '<div class="input-group m-bot15">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                {input}
+                            </div>',
+    ])->label(false) ?>
+    <?= $form->field($model, 'password',[
+        'inputOptions' => ['class'=>'form-control', 'placeholder' => Yii::t('common', 'password')],
+        'inputTemplate' => '<div class="input-group m-bot15">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                {input}
+                            </div>',
+    ])->passwordInput()->label(false) ?>
 
-                <?= $form->field($model, 'password')->passwordInput() ?>
+    <?= $form->field($model, 'rememberMe',[
+        'inputTemplate'=>'{input}',
+        'options' => [
+        ],
+    ])->checkbox() ?>
 
-                <?= $form->field($model, 'rememberMe')->checkbox() ?>
-
-                <div class="form-group">
-                    <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
-                </div>
-
-            <?php ActiveForm::end(); ?>
-        </div>
-    </div>
+    <?= Html::submitButton(Yii::t('common', 'login'), ['class' => 'btn btn-lg btn-login btn-block', 'name' => 'login-button']) ?>
 </div>
+<?php ActiveForm::end(); ?>
+
