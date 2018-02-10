@@ -1,5 +1,4 @@
 <?php
-
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model \common\models\LoginForm */
@@ -18,7 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
     ]
 ]); ?>
 
-<a class="logo floatless" href="/">IZ<span>YUE</span>管理系统</a>
+<a class="logo floatless" href="/">YeeAdmin</a>
 <div class="login-wrap">
 
     <?= $form->field($model, 'username',[
