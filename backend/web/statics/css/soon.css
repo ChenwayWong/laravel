@@ -3,7 +3,8 @@
 HEADER
 *******************************************************************************************************************************/
 .cs-bg {
-    background: url("../img/slider/1.jpg") no-repeat scroll 0 0 / cover;
+    /* background: url("../img/slider/1.jpg") no-repeat scroll 0 0 / cover; #82ABBA #00B0F0*/ 
+     background: #19c1f8 no-repeat scroll 0 0 / cover;
 
 }
 

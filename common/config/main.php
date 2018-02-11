@@ -4,7 +4,7 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=174.138.48.6;dbname=yeeBlog',
+            'dsn' => 'mysql:host=121.196.219.152;dbname=yeeBlog',
             'username' => 'root',
             'password' => '123456',
             'charset' => 'utf8',

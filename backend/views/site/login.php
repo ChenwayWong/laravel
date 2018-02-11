@@ -17,7 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
     ]
 ]); ?>
 
-<a class="logo floatless" href="/">YeeAdmin</a>
+<a class="logo floatless" href="/">FaceBlog</a>
 <div class="login-wrap">
 
     <?= $form->field($model, 'username',[

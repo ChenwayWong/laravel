@@ -35,7 +35,7 @@ $this->registerJs("
       });
 ");
 
-$this->title = 'My Yii Application';
+$this->title = 'FaceBlog后台管理系统';
 ?>
 <section class="wrapper">
     <!--state overview start-->

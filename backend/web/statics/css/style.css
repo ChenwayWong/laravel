@@ -106,12 +106,12 @@ a, a:hover, a:focus {
 /*}*/
 
 .form-signin .btn-login {
-    background: #f67a6e;
+    background: #a9d96c;
     color: #fff;
     text-transform: uppercase;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
-    box-shadow: 0 4px #e56b60;
+    /* box-shadow: 0 4px #d5d5e7; */
     margin-bottom: 20px;
 }
 
@@ -365,7 +365,7 @@ a.logo {
     color: #2e2e2e;
     float: left;
     margin-top: 15px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 a.logo:hover, a.logo:focus {
